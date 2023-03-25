@@ -40,7 +40,7 @@ export default function ProductDetail() {
   const [qty, setQty] = useState(1);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const details = useSelector((state) => state.products);
+  const details = useSelector((state) => state.details);
   const { id } = useParams();
 
   useEffect(() => {

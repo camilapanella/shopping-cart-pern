@@ -8,12 +8,27 @@ import {
   loadCart,
   deleteCart,
 } from "../actions/actions";
-import { Grid, Button } from "@mui/material";
+import { Grid, Button, CardMedia, Card } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { Toaster, toast } from "react-hot-toast";
 import { useStyles } from "../components/styles";
+import { makeStyles } from "@mui/styles";
+
+const useStylesLocal = makeStyles((theme) => ({
+  root: {
+    display: "flex",
+    marginTop: 15,
+  },
+  content: {
+    flex: "1 0 auto",
+  },
+  cover: {
+    width: 200,
+  },
+}));
 
 export default function Saved() {
+  const classesLocal = useStylesLocal();
   const dispatch = useDispatch();
   const savedCarts = useSelector((state) => state.savedCarts);
   const navigate = useNavigate();
@@ -44,23 +59,24 @@ export default function Saved() {
   };
 
   return (
-    <Container fixed>
-      <Grid container spacing={3} className={classes.cards}>
+    <Container fixed className={classes.cards}>
+      <Grid container spacing={3}>
         {savedCarts.length ? (
           savedCarts.map((cart) => (
-            <div className={classes.card}>
+            <Card className={classes.card}>
               <Typography variant="h4">{cart.name}</Typography>
               <div>
                 {cart.content?.flat().map((product) => (
-                  <div>
+                  <Card className={classes.card}>
                     <img
+                      className={classesLocal.cover}
                       name={product.name}
                       src={product.image}
                       alt={product.name}
                     />
                     <Typography variant="h5">{product.name}</Typography>
                     <Typography variant="h5">x{product.quantity}</Typography>
-                  </div>
+                  </Card>
                 ))}
               </div>
               <div>
@@ -122,7 +138,7 @@ export default function Saved() {
                   </Grid>
                 )}
               </div>
-            </div>
+            </Card>
           ))
         ) : (
           <div>

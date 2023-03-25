@@ -1,0 +1,42 @@
+{
+"name":"Keyboard",
+"description":"Logitech, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+"price":2000,
+"image":"https://cdn.shopify.com/s/files/1/0550/9703/2858/products/pd-713PUS.png?v=1648807739",
+"quantity": 1
+}
+{
+"name":"Mouse",
+"description":"Logitech, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+"price":500,
+"image":"http://d2r9epyceweg5n.cloudfront.net/stores/002/211/043/products/910-005769_051-ec9a2660ae3dee415d16560063072354-640-0.png",
+"quantity": 1
+}
+{
+"name":"Airpods",
+"description":"Apple, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+"price":200,
+"image":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51QpTEQOQlL.jpg",
+"quantity": 1
+}
+{
+"name":"Headphones",
+"description":"Soundcore, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+"price":3000,
+"image":"https://http2.mlstatic.com/D_NQ_NP_868575-MLA48132252111_112021-O.webp",
+"quantity": 1
+}
+{
+"name":"Speaker",
+"description":"JBL, Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
+"price":2000,
+"image":"https://images.officeworks.com.au/api/2/img/https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/INJBLGO3PK_jbl_go_3_bluetooth_speaker_pink.jpg/resize?size=600&auth=MjA5OTcwODkwMg__",
+"quantity": 1
+}
+{
+"name":"Iphone",
+"description":"Apple, Sed ut perspiciatis unde omnis iste natus error",
+"price":1000,
+"image":"https://http2.mlstatic.com/D_NQ_NP_865499-MLA47781634015_102021-O.webp",
+"quantity": 1
+}

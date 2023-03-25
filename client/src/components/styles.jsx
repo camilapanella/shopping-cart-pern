@@ -4,7 +4,7 @@ export const useStyles = makeStyles(() => ({
   cards: (cards) => ({
     display: "flex",
     flexWrap: "wrap",
-    margin: "20px auto",
+    margin: "50px auto",
     justifyContent: "space-around",
   }),
   card: (card) => ({
